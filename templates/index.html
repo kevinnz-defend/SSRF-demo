@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title> SSRF Demo app </title>
+    </head>
+    <body>
+        <form action="{{ url_for('image') }}" method="post">
+        <div>
+            <img src="{{url_for('static', filename='dummy_image.jpg')}}" style="height: 150px;"/>
+        </div>
+        <div>
+            <p>Enter image url here </p>
+            <input type="text" name="image">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+        </form>
+    </body>
+</html>
