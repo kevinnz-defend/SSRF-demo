@@ -1,0 +1,14 @@
+{
+    "name": "docker_web_app",
+    "version": "1.0.0",
+    "description": "SSRF Node.js on Docker",
+    "author": "Kevin Alcock <kevin.alcock@example.com>",
+    "main": "demo.js",
+    "scripts": {
+      "start": "node demo.js"
+    },
+    "dependencies": {
+      "express": "^4.16.1",
+      "axios": "0.21.4"
+    }
+  }
